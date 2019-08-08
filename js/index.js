@@ -48,6 +48,21 @@ nav_links[2].textContent = siteContent["nav"]["nav-item-3"];
 nav_links[3].textContent = siteContent["nav"]["nav-item-4"];
 nav_links[4].textContent = siteContent["nav"]["nav-item-5"];
 nav_links[5].textContent = siteContent["nav"]["nav-item-6"];
+nav_links[0].style.color = "green";
+nav_links[1].style.color = "green";
+nav_links[2].style.color = "green";
+nav_links[3].style.color = "green";
+nav_links[4].style.color = "green";
+nav_links[5].style.color = "green";
+
+let app_ch = document.createElement("A");
+app_ch.textContent = "End";
+document.querySelector("nav").appendChild(app_ch).style.color = "red";
+
+let prep = document.createElement("A");
+prep.textContent = "Start";
+document.querySelector("nav").prepend(prep);
+prep.style.color = "red";
 
 let cta_section_text = document.querySelector(".cta-text h1");
 cta_section_text.textContent = siteContent["cta"]["h1"];
@@ -83,7 +98,7 @@ contacts.textContent = siteContent["contact"]["contact-h4"];
 
 let contacts_p = document.querySelectorAll(".contact p");
 contacts_p[0].textContent = siteContent["contact"]["address"];
-contacts_p[0].innerHTML = "123 Way 456 Street<br>Somewhere, US";
+contacts_p[0].innerHTML = "123 Way 456 Street<br>Somewhere, USA";
 contacts_p[1].textContent = siteContent["contact"]["phone"];
 contacts_p[2].textContent = siteContent["contact"]["email"];
 
